@@ -96,6 +96,199 @@
   --z-toast: 1080;
 }
 
+/* ===== ICON SYSTEM ===== */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.icon-sm {
+  width: 0.875em;
+  height: 0.875em;
+}
+
+.icon-lg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.icon-xl {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Fallback emoji icons */
+.emoji-icon {
+  font-size: 1em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Icon containers */
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Brand icon styles */
+.brand-icon {
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Service icon backgrounds */
+.service-icon,
+.contact-icon,
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-color);
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gray-100);
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+/* Remove Font Awesome dependency */
+.fa,
+.fas,
+.far,
+.fab,
+.fal,
+.fad,
+.fass,
+.fasr {
+  font-family: inherit;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Icon replacements using emojis and CSS */
+.fa-brain::before { content: "🧠"; }
+.fa-chart-line::before { content: "📈"; }
+.fa-cogs::before { content: "⚙️"; }
+.fa-database::before { content: "🗄️"; }
+.fa-lightbulb::before { content: "💡"; }
+.fa-headset::before { content: "🎧"; }
+.fa-robot::before { content: "🤖"; }
+.fa-arrow-right::before { content: "→"; }
+.fa-play::before { content: "▶️"; }
+.fa-eye::before { content: "👁️"; }
+.fa-check::before { content: "✓"; }
+.fa-shield-alt::before { content: "🛡️"; }
+.fa-users::before { content: "👥"; }
+.fa-clock::before { content: "⏰"; }
+.fa-shopping-cart::before { content: "🛒"; }
+.fa-wrench::before { content: "🔧"; }
+.fa-coins::before { content: "🪙"; }
+.fa-flask::before { content: "🧪"; }
+.fa-pills::before { content: "💊"; }
+.fa-graduation-cap::before { content: "🎓"; }
+.fa-award::before { content: "🏆"; }
+.fa-map-marker-alt::before { content: "📍"; }
+.fa-phone::before { content: "📞"; }
+.fa-envelope::before { content: "✉️"; }
+.fa-paper-plane::before { content: "📩"; }
+.fa-chevron-up::before { content: "↑"; }
+.fa-bars::before { content: "☰"; }
+.fa-moon::before { content: "🌙"; }
+.fa-sun::before { content: "☀️"; }
+.fa-linkedin::before { content: "in"; }
+.fa-twitter::before { content: "𝕏"; }
+.fa-github::before { content: "⚡"; }
+.fa-youtube::before { content: "▶️"; }
+.fa-python::before { content: "🐍"; }
+.fa-aws::before { content: "☁️"; }
+.fa-google::before { content: "G"; }
+.fa-microsoft::before { content: "⊞"; }
+.fa-docker::before { content: "🐳"; }
+.fa-stream::before { content: "〰️"; }
+.fa-spinner::before { content: "⏳"; }
+
+/* Social media specific styling */
+.fa-linkedin::before {
+  background: #0077B5;
+  color: white;
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.fa-twitter::before {
+  color: #1DA1F2;
+  font-weight: bold;
+}
+
+.fa-github::before {
+  color: #333;
+  font-weight: bold;
+}
+
+.fa-youtube::before {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* Hamburger menu animation fix */
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--gray-700);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+}
+
+/* Loading spinner */
+.fa-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Icon hover effects */
+.icon-hover:hover {
+  transform: scale(1.1);
+  transition: transform var(--transition-fast);
+}
+
+/* Ensure icons don't break layout */
+.icon-container,
+.service-icon,
+.contact-icon,
+.tech-icon {
+  flex-shrink: 0;
+}
+
 /* ===== RESET & BASE ===== */
 *,
 *::before,
