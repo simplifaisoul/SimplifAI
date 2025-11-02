@@ -1,0 +1,109 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://simplifaisoul.github.io/SimplifAI/sitemap.xml
+
+# Block access to sensitive files and directories
+Disallow: /_*
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /config/
+Disallow: /scripts/
+Disallow: /temp/
+Disallow: /cache/
+
+# Block access to development and testing files
+Disallow: /*.test.js
+Disallow: /*.spec.js
+Disallow: /*.dev.js
+Disallow: /test/
+Disallow: /tests/
+Disallow: /testing/
+
+# Block access to backup files
+Disallow: /*.backup
+Disallow: /*.bak
+Disallow: /*.tmp
+Disallow: /*.old
+
+# Block access to configuration files
+Disallow: /*.config.js
+Disallow: /*.env
+Disallow: /*.env.*
+Disallow: /wp-config.php
+Disallow: /config.php
+
+# Allow specific file types for SEO
+Allow: *.css
+Allow: *.js
+Allow: *.svg
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.webp
+Allow: *.ico
+Allow: /manifest.json
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: BacklinkCrawler
+Disallow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Image search crawlers
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.webp
+Allow: *.svg
+
+# Mobile crawlers
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: bingbot-mobile
+Allow: /

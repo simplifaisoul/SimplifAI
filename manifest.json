@@ -1,0 +1,93 @@
+{
+  "name": "SimplifAI-1 Portfolio",
+  "short_name": "SimplifAI-1",
+  "description": "Enterprise AI Solutions & Machine Learning Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%234f46e5'/><text x='50' y='50' text-anchor='middle' dy='.3em' fill='white' font-size='40' font-family='Arial'>🤖</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><circle cx='96' cy='96' r='88' fill='%234f46e5'/><text x='96' y='96' text-anchor='middle' dy='.3em' fill='white' font-size='80' font-family='Arial'>🤖</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='256' cy='256' r='240' fill='%234f46e5'/><text x='256' y='256' text-anchor='middle' dy='.3em' fill='white' font-size='200' font-family='Arial'>🤖</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://picsum.photos/seed/simplifai-screenshot/1280/720.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "SimplifAI-1 Desktop View"
+    },
+    {
+      "src": "https://picsum.photos/seed/simplifai-mobile/375/667.jpg",
+      "sizes": "375x667",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "SimplifAI-1 Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with our AI experts",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2310b981'/><text x='50' y='50' text-anchor='middle' dy='.3em' fill='white' font-size='40' font-family='Arial'>📧</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Explore our AI solutions",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23f59e0b'/><text x='50' y='50' text-anchor='middle' dy='.3em' fill='white' font-size='40' font-family='Arial'>⚙️</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Projects",
+      "description": "View our success stories",
+      "url": "/#portfolio",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2306b6d4'/><text x='50' y='50' text-anchor='middle' dy='.3em' fill='white' font-size='40' font-family='Arial'>📊</text></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}
