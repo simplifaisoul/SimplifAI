@@ -1,0 +1,61 @@
+/* ===== ICON STYLES ===== */
+/* This file contains icon styles that are already defined in the main CSS */
+
+/* Brand icon styles */
+.brand-icon {
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Service icon backgrounds */
+.service-icon,
+.contact-icon,
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(135deg, var(--purple-gradient-start), var(--purple-gradient-end));
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--purple-gradient-start), var(--primary-dark));
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--black-tertiary);
+  color: var(--primary-color);
+  font-size: 20px;
+  border: 1px solid var(--black-quaternary);
+}
+
+/* Icon containers */
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon sizes */
+.icon-sm {
+  width: 0.875em;
+  height: 0.875em;
+}
+
+.icon-lg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.icon-xl {
+  width: 1.5em;
+  height: 1.5em;
+}
